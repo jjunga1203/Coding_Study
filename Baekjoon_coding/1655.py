@@ -1,14 +1,15 @@
 import sys
 
 sys.stdin = open("1655.md", "r")
+# input = sys.stdin.readline
 
-T = int(input())
+T = int( sys.stdin.readline().strip())
 tmp_arr = []
 result_val = ''
 
 # 여러개의 테스트 케이스가 주어지므로, 각각을 처리합니다.
 for test_case in range(1, T + 1):
-    tmp = int(input())
+    tmp = int( sys.stdin.readline().strip())
     tmp_left = []
 
     # 삽입하기 전에 크기 비교하기

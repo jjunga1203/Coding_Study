@@ -12,9 +12,11 @@ N = len(grid)
 M = len(grid[0])
 
 arr = [0] * N
+max_val = [[0] * N]*2
 
 for i in range(N):
-    for j in range(M-1):
-        if grid[i][j] == 1:
-            arr[i] += 1
-
+    for j in range(M):
+        if max_val[i][0] < grid[i][j]:
+            max_val[i][0] = grid[i][j]
+            max_val[i][1] = j
+    print(max_val[i])
