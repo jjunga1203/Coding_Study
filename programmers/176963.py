@@ -17,6 +17,6 @@ def solution(name, yearning, photo):
 name = ["kali", "mari", "don"]
 yearning = [11, 1, 55]
 photo = [["kali", "mari", "don"], ["pony", "tom", "teddy"], ["con", "mona", "don"]]
-# 결과 #[67, 0, 55]
+# 결과 [67, 0, 55]
 
 print(solution(name, yearning, photo))
